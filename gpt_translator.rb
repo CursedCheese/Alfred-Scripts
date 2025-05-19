@@ -1,4 +1,4 @@
-your/path/to/ruby <<'EOF'
+/Users/shoei/.rbenv/shims/ruby <<'EOF'
 require 'net/http'
 require 'json'
 require 'uri'
@@ -12,9 +12,16 @@ def translate(text)
     Translate the following text to #{target_lang}.
     Output in the following format:
 
-    <入力文>
-    ---
-    <出力文>
+    input
+    output
+
+	Example:
+	おはよう
+	Good morning
+
+	Example2:
+	Good morning
+	おはよう
 
     Text:
     #{text}
